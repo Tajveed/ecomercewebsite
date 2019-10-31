@@ -11,7 +11,7 @@ class Directory extends Component {
                     title: 'shirts',
                     imageUrl: 'https://static-01.daraz.pk/p/99ef60cd2838dd9a714fe446733e85aa.jpg',
                     id: 1,
-                    linkUrl: 'shop/Shirts'
+                    linkUrl: 'shirts'
                 },
                 {
                     title: 'jackets',
@@ -47,8 +47,8 @@ class Directory extends Component {
         return (
             <div className='directory-menu'>
                 {
-                    this.state.sections.map(({ title, imageUrl, id, size }) => (
-                        <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                    this.state.sections.map(({ id, ...otherSectionProps }) => (
+                        <MenuItem key={id} {...otherSectionProps} />
                     ))
                 }
             </div>
