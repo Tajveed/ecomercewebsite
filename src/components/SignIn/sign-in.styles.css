@@ -1,5 +1,5 @@
 .sign-in {
-  width: 30vw;
+  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,5 +11,14 @@
 
 .sign-in .title {
   margin: 10px 0;
+}
+
+.sign-in .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=sign-in.styles.css.map */
